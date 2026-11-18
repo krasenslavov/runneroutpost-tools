@@ -1,0 +1,39 @@
+{
+  "name": "runneroutpost-tools",
+  "version": "1.0.0",
+  "description": "Small tools for running groups: schedule text to a calendar file, a GPX privacy trimmer, a meeting-time planner, a group pace calculator, GPX route stats and a daylight check. No dependencies on a server, no tracking.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./browser": "./dist/browser.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./dist/browser.js"
+  ],
+  "keywords": [
+    "running",
+    "gpx",
+    "ics",
+    "calendar",
+    "privacy",
+    "time-zones"
+  ],
+  "homepage": "https://blog.runneroutpost.com/tools/",
+  "author": "Krasen Slavov",
+  "publishConfig": {
+    "access": "public"
+  }
+}
